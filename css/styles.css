@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --secondary-color: #ECF2FF;
+    --heading-color: #000000;
+    --text-color: #677788;
+    --accent-color: #2476FF;
+    font-family: inter;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color)
+}
+
+/*Header*/
+
+.header {
+    background-color: #F6F8FA;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 10px 30px;
+    align-items: center;
+    height: 86px;
+}
+
+.logo {
+    display: block;
+    min-width: 150px;
+    max-width: 150px;
+    height: auto;
+}
+
+.navbar a {
+    margin: 0 10px;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
+}
+
+.navbar a.active {
+    color: var(--accent-color);
+}
+
+.navbarbtn {
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: 700;
+    border-style: solid;
+    border-color: var(--accent-color);
+    border-radius: 30px;
+    padding: 15px 25px;
+    margin: 0 20px;
+}
+
+.navbarbtn:hover {
+        background-color: white;
+        color: var(--accent-color);
+}
+
+.hamburger {
+    font-size: larger;
+    color: var(--text-color);
+}
+
+/*Header Responsive*/
+
+@media screen and (min-width: 1024px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar a,
+    .navbarbtn {
+    display: none;
+    }
+}
+
+/*Hero Section*/ 
+
+.herosection {
+    display: flex;
+    flex-direction: row;
+    height: 446px;
+    width: 100%;
+    background-image: url(/assets/bg/background-top.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.herocontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    padding: 0 2.5% 60px 2.5%;
+    gap: 15px;
+}
+
+.heroheader h1 {
+    font-weight: 500;
+    font-size: 40px;
+    color: #000000;
+    max-width: 334px;
+}
+
+.herobtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 0;
+}
+
+button.playvideobtn {
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: 700;
+    border-style: solid;
+    border-color: var(--accent-color);
+    border-radius: 30px;
+    padding: 15px 25px;
+}
+
+button.playvideobtn:hover {
+    background-color: white;
+    color: var(--accent-color);
+}
+
+.fa-play-circle {
+    scale: 1.4;
+    padding-right: 7px;
+}
+
+.herobtns a {
+    margin: 0 10px;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.herobtns a:hover {
+    color: var(--accent-color);
+}
+
+.heroimages {
+    height: 446px;
+    min-height: 446px;
+    width: 50vw;
+    position: relative;
+}
+
+.imgwrappergoogle {
+    position: absolute;
+    top: 11%;
+    left: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imgwrappergoogle img {
+    height: 67%;
+    width: 67%;
+}
+
+.imgwrapperasana {
+    position: absolute;
+    top: 11%;
+    left: 79%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imgwrapperasana img {
+    height: 67%;
+    width: 67%;
+}
+
+.imgwrapperatlassian {
+    position: absolute;
+    top: 11%;
+    left: 36%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imgwrapperatlassian img {
+    height: 67%;
+    width: 67%;
+}
+
+.imgwrappercalendar {
+    position: absolute;
+    top: 78%;
+    left: 76%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imgwrappercalendar img {
+    height: 67%;
+    width: 67%;
+}
+
+.imgwrappergoogle-ads {
+    position: absolute;
+    top: 74%;
+    left: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imgwrappergoogle-ads img {
+    height: 67%;
+    width: 67%;
+}
+
+.imgwrapperpaypal {
+    position: absolute;
+    top: 48%;
+    left: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imgwrapperpaypal img {
+    height: 67%;
+    width: 67%;
+}
+
+.imgwrapperweave {
+    position: absolute;
+    top: 48%;
+    left: 54%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imgwrapperweave img {
+    height: 67%;
+    width: 67%;
+}
+
+/*Hero Responsive*/
+
+@media screen and (max-width: 1023px) {
+    .herosection {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .herocontent {
+        width: 100vw;
+    }
+
+    .heroheader h1 {
+        max-width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .herotext {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .herobtns {
+        justify-content: center;
+    }
+
+    .heroimages {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .heroheader h1 {
+        font-size: 26px;
+    }
+}

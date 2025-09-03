@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 :root {
     --secondary-color: #ECF2FF;
     --heading-color: #000000;
@@ -94,7 +99,7 @@
     flex-direction: row;
     height: 446px;
     width: 100%;
-    background-image: url(/assets/bg/background-top.svg);
+    background-image: url(../assets/bg/background-top.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -319,6 +324,7 @@ button.playvideobtn:hover {
         padding-top: 50px;
         display: flex;
         flex-direction: column;
+        height: fit-content;
     }
 
     .herocontent {
@@ -349,4 +355,174 @@ button.playvideobtn:hover {
     .heroheader h1 {
         font-size: 26px;
     }
+}
+
+/*About Section*/
+
+.aboutsection {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutheader h2 {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+}
+
+.abouttext {
+    padding: 20px;
+    text-align: center;
+}
+
+.bullets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+}
+
+.bulletwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-color: var(--secondary-color);
+    border-style: solid;
+}
+
+.bulletpoint {
+    background-color: var(--accent-color);
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    border-color: var(--accent-color);
+    border-style: solid;
+}
+
+.bullettext {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7%;
+}
+
+.bulletitem p {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*Pricing Section*/
+
+.pricingsection {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 30px;
+}
+
+.pricingheader {
+    color: black;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.pricingsubheader {
+    text-align: center;
+}
+
+.pricingdetails {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 450px;
+    justify-content: space-around;
+}
+
+.pricingcard {
+    display: flex;
+    flex-direction: column;
+    max-width: 370px;
+    padding: 40px;
+    gap: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E2E2E2;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.pricecardprice {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.price {
+    font-size: 50px;
+    font-weight: 500;
+    color: black;
+}
+
+.pricecardtext {
+    margin-top: 10px;
+}
+
+.pricingcard .playvideobtn {
+    margin-top: 30px;
+    width: 50%;
+}
+
+.pricecarddisclaimer {
+    font-size: 12px;
+}
+
+.pricingfeatures {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 560px;
+}
+
+.pricingfeature {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 280px;
+    padding: 20px;
+}
+
+.pricingfeature img {
+    height: 50px;
+    width: 50px;
+}
+
+.pricingfeature h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/*Hire Us Section*/
+.hireussection {
+    height: 708px;
+    background-color: #20335B;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0 30px 30px;
+}
+
+
+
+/*Footer*/
+
+footer {
+    height: 246px;
 }

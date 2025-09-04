@@ -476,7 +476,7 @@ button.playvideobtn:hover {
 
 .pricingcard .playvideobtn {
     margin-top: 30px;
-    width: 50%;
+    width: 55%;
 }
 
 .pricecarddisclaimer {
@@ -649,7 +649,7 @@ textarea {
     padding: 10px;
     border: solid;
     border-radius: 5px;
-    border-width: -3px;
+    border-width: 1px;
     border-color: #E6E8F2;
     margin-bottom: 20px;
 }
@@ -677,6 +677,22 @@ input#emailoptin {
     width: 351px;
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
+}
+
+.privacypolicylink {
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.privacypolicylink a {
+    font-weight: 700;
+    color: #677788;
+    text-decoration: underline dashed;
+}
+
+form button {
+    margin-left: 33%;
 }
 
 /*Footer*/
@@ -685,5 +701,61 @@ footer {
     height: 246px;
     display: flex;
     flex-direction: row;
+    padding: 40px 30px;
+    gap: 40px;
+    justify-content: center;
+}
+
+.footerlogo {
+    width: 251px;
+}
+
+.footerlogo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+footer h3 {
+    font-size: 18px;
+    font-weight: 860;
+    color: black;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-weight: 510px;
+    color: var(--text-color);
+    margin-bottom: 9px;
+}
+
+footer p:hover {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+footer a {
+    font-weight: 510px;
+    color: var(--text-color);
+    margin-bottom: 9px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.hiring {
+    background-color: #2576ff;
+    color: white;
+    font-size: 8px;
+    width: 55;
+    height: 14;
+    padding-top: 2px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    border-radius: 3px;
 }
 

@@ -512,14 +512,78 @@ button.playvideobtn:hover {
 
 /*Hire Us Section*/
 .hireussection {
-    height: 708px;
-    background-color: #20335B;
     display: flex;
     flex-direction: row;
-    padding: 30px 0 30px 30px;
+    justify-content: center;
+    height: 708px;
+    background-color: #20335B;
+    padding: 30px;
 }
 
+.hireuscta {
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 60px;
+}
 
+.hireuscta h2 {
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hireustagline {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 34px;
+}
+
+.hireusquote {
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin-top: 32px;
+}
+
+.hireuscta h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.jobtitle {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.quoteimgwrapper img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.hireusform {
+    max-width: 482px;
+    background-color: white;
+    padding: 30px;
+    border: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+.formheading {
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
 
 /*Footer*/
 

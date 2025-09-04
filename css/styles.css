@@ -525,4 +525,7 @@ button.playvideobtn:hover {
 
 footer {
     height: 246px;
+    display: flex;
+    flex-direction: row;
 }
+

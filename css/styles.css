@@ -520,6 +520,7 @@ button.playvideobtn:hover {
     padding: 30px;
 }
 
+/*Hire Us CTA*/
 .hireuscta {
     margin-left: 60px;
     display: flex;
@@ -570,6 +571,16 @@ button.playvideobtn:hover {
     border-radius: 30px;
 }
 
+/*Hire Us Form*/
+.formheading {
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+}
+
 .hireusform {
     max-width: 482px;
     background-color: white;
@@ -577,12 +588,95 @@ button.playvideobtn:hover {
     border: solid;
     border-color: white;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
-.formheading {
-    font-size: 16px;
-    font-weight: 700;
+input {
+    font-family: inter;
+    font-weight: 500;
+    color: #828282;
+    height: 44px;
+    opacity: 1;
+    padding: 10px;
+    border: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #E6E8F2;
+}
+
+input#email {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input#firstname {
+    width: 47.5%;
+    margin-right: 4%;
+    margin-bottom: 20px;
+}
+
+input#lastname {
+    width: 47.5%;
+}
+
+input#message {
+    width: 100%;
+    height: 100px;
+}
+
+select {
+    width: 47.5%;
+    font-family: inter;
+    font-weight: 500;
     color: black;
+    height: 44px;
+    opacity: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #E6E8F2;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    font-family: inter;
+    font-weight: 500;
+    color: #828282;
+    height: 150px;
+    padding: 10px;
+    border: solid;
+    border-radius: 5px;
+    border-width: -3px;
+    border-color: #E6E8F2;
+    margin-bottom: 20px;
+}
+
+select#budget {
+    margin-right: 4%;
+}
+
+input#emailoptin {
+    width: 25px;
+    height: 24px;
+    opacity: 1;
+    border: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: #E6E8F2;
+}
+
+.formfooter {
+    display: flex;
+    flex-direction: row;
+}
+
+.formfootertext {
+    width: 351px;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Footer*/

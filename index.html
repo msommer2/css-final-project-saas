@@ -207,21 +207,23 @@
             <option value="Istanbul">Istanbul</option>
             <option value="Canada">Canada</option>
           </select><br>
-          <input 
-          type="text" 
+          <textarea
           id="message" 
           name="message"
-          placeholder="Tell us more about your project, needs, and 
-          timeline, please...">
-          <label for="emailoptin">
+          rows="4"
+          placeholder="Tell us more about your project, needs, and timeline, please..."></textarea>
+          <div class="formfooter">
             <input type="checkbox" id="emailoptin" name="emailoptin">
-            Yes, I'd like to receive occasional marketing emails
-            from Front. I have the right to opt out at any time.
-          </label>
-          <a href="#navhireussection">View privacy policy</a>
-          <button class="playvideobtn">
+            <div class="formfootertext">
+              <label for="emailoptin"> Yes, I'd like to receive occasional marketing emails from Front. I have the right to opt out at any time.</label>
+              <div class="privacypolicylink">
+                <a href="#navhireussection">View privacy policy</a>
+              </div>
+            </div>
+          </div>
+            <button class="playvideobtn">
             <span class="playvideobtn-text">Submit Form</span>
-          </button>
+            </button>
         </form>
       </div>
     </div>
@@ -229,7 +231,7 @@
       <div class="footerlogo">
         <img src="./assets/logos/logo-front.svg" alt="Front logo">
         <p>
-          <i class="fa=solid fa-location-arrow"></i>
+          <i class="fa-solid fa-location-arrow"></i>
            153 Williamson Plaza, Maggieberg
         </p>
         <p>
@@ -242,7 +244,7 @@
       <div class="footercompany">
         <h3>Company</h3>
         <p>About</p>
-        <p>Career <span class="career">We're hiring</span></p>
+        <p>Career <span class="hiring">We're hiring</span></p>
         <p>Blog</p>
         <p>Customers</p>
         <p>Hire us</p>

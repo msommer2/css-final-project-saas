@@ -188,6 +188,7 @@ button.playvideobtn:hover {
     }
 }
 
+@media screen and (min-width: 1024px) {
 .imgwrapperpaypal, 
 .imgwrapperatlassian, 
 .imgwrapperweave {
@@ -209,7 +210,7 @@ button.playvideobtn:hover {
 .imgwrappercalendar {
     animation: slide-left 2s ease-in-out 1 0s forwards;
 }
-
+}
 .imgwrappergoogle {
     position: absolute;
     top: 11%;
@@ -861,6 +862,10 @@ input#emailoptin {
     font-weight: 700;
     color: #677788;
     text-decoration: underline dashed;
+}
+
+.privacypolicylink a:hover {
+    color: var(--accent-color);
 }
 
 form button {

@@ -82,15 +82,15 @@
           <div class="bulletwrapper">
             <div class="bulletpoint"></div>
           </div>
-          <div style="height: 1px; background-color: #ECF2FF; width: 15%;"></div>
+          <div class= "bulletdivider" style="height: 1px; background-color: #ECF2FF; width: 15%;"></div>
           <div class="bulletwrapper">
             <div class="bulletpoint"></div>
           </div>
-          <div style="height: 1px; background-color: #ECF2FF; width: 15%;"></div>
+          <div class="bulletdivider" style="height: 1px; background-color: #ECF2FF; width: 15%;"></div>
           <div class="bulletwrapper">
             <div class="bulletpoint"></div>
           </div>
-          <div style="height: 1px; background-color: #ECF2FF; width: 15%;"></div>
+          <div class="bulletdivider" style="height: 1px; background-color: #ECF2FF; width: 15%;"></div>
           <div class="bulletwrapper">
             <div class="bulletpoint"></div>
           </div>
@@ -111,6 +111,38 @@
         </div>
         </div>
       </div>
+      <div class="bulletsectionmobile">
+        <div class="bulletsmobile">
+          <div class="bulletwrapper">
+            <div class="bulletpoint"></div>
+          </div>
+          <div class="bulletwrapper">
+            <div class="bulletpoint"></div>
+          </div>
+          <div class="bulletwrapper">
+            <div class="bulletpoint"></div>
+          </div>
+          <div class="bulletwrapper">
+            <div class="bulletpoint"></div>
+          </div>
+        </div>
+        <div class="bullettextmobile">
+          <div class="bulletitem">
+            <p>Basic elements</p>
+          </div>
+          <div class="bulletitem">
+            <p>Components</p>
+          </div>
+          <div class="bulletitem">
+            <p>Combined components</p>
+          </div>
+          <div class="bulletitem">
+            <p>Page layouts</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
     <div id="navpricingsection" class="pricingsection">
       <h2 class="pricingheader">Pricing</h2>
       <p class="pricingsubheader">
@@ -143,7 +175,7 @@
           </div>
           <div class="pricingfeature">
             <img src="./assets/images/images.svg" alt="Diamond">
-            <h3>Hundreds of components</h3>
+            <h3>Images included</h3>
             <p class="pricingfeaturetext">
               Images included. We made custom license for all our
               premium images in the front.
@@ -151,7 +183,7 @@
           </div>
           <div class="pricingfeature">
             <img src="./assets/images/cancel.svg" alt="Price tag">
-            <h3>Hundreds of components</h3>
+            <h3>Cancel anytime  <span class="sketch">sketch</span></h3>
             <p class="pricingfeaturetext">
               If it's not for you, just cancel. No hidden costs or
               fees.
@@ -159,7 +191,7 @@
           </div>
           <div class="pricingfeature">
             <img src="./assets/images/moneyback.svg" alt="Money back">
-            <h3>Hundreds of components</h3>
+            <h3>Money back</h3>
             <p class="pricingfeaturetext">
               100% guaranteed money back. No questions asked.
             </p>
@@ -169,21 +201,25 @@
     </div>
     <div id="navhireussection" class="hireussection">
       <div class="hireuscta">
-        <h2>Hire Us</h2>
-        <p class="hireustagline">
-          Whatever your goal - we will get you there
-        </p>
-        <div style="height: 1px; background-color: #FFFFFF; width: 100%;"></div>
-        <p class="hireusquote">
-          "I love front! I love the ease of use, I love the fact
-          that I have total creative freedom..."
-        </p>
-        <h3>Charlotte Moore</h3>
-        <p class="jobtitle">
-          Head of Commercials, Slack
-        </p>
-        <div class="quoteimgwrapper">
-          <img src="./assets/images/man_one.jpg" alt="Man">
+        <div class="ctatag">
+          <h2>Hire Us</h2>
+          <p class="hireustagline">
+            Whatever your goal - we will get you there
+          </p>
+          <div style="height: 1px; background-color: #FFFFFF; width: 100%;"></div>
+          <p class="hireusquote">
+            "I love front! I love the ease of use, I love the fact
+            that I have total creative freedom..."
+          </p>
+        </div>
+        <div class="ctaattribute">
+          <h3>Charlotte Moore</h3>
+          <p class="jobtitle">
+            Head of Commercials, Slack
+          </p>
+          <div class="quoteimgwrapper">
+            <img src="./assets/images/man_one.jpg" alt="Man">
+          </div>
         </div>
       </div>
       <div class="hireusform">
@@ -192,21 +228,25 @@
           possible
         </p>
         <form>
-          <input type="text" id="firstname" name="firstname" placeholder="First name">
-          <input type="text" id="lastname" name="lastname" placeholder="Last name"><br>
+          <div class="firstnamelastname">
+            <input type="text" id="firstname" name="firstname" placeholder="First name">
+            <input type="text" id="lastname" name="lastname" placeholder="Last name">
+          </div>
           <input type="text" id="email" name="email" placeholder="Email"><br>
-          <select name="budget" id="budget">
-            <option value="" disabled selected>Budget</option>
-            <option value="$1-$999">$1-$999</option>
-            <option value="$7million">$7million</option>
-            <option value="3-fiddy">3-fiddy</option>
-          </select>
-          <select name="country" id="country">
-            <option value="" disabled selected>Country</option>
-            <option value="USA">USA</option>
-            <option value="Istanbul">Istanbul</option>
-            <option value="Canada">Canada</option>
-          </select><br>
+          <div class="formselections">
+            <select name="budget" id="budget">
+              <option value="" disabled selected>Budget</option>
+              <option value="$1-$999">$1-$999</option>
+              <option value="$7million">$7million</option>
+              <option value="3-fiddy">3-fiddy</option>
+            </select>
+            <select name="country" id="country">
+              <option value="" disabled selected>Country</option>
+              <option value="USA">USA</option>
+              <option value="Istanbul">Istanbul</option>
+              <option value="Canada">Canada</option>
+            </select>
+          </div>
           <textarea
           id="message" 
           name="message"
@@ -241,40 +281,46 @@
       </div>
       <!-- Should be <a> but using <p> in this case for simplicity
         since the site doesn't actually contain other pages -->
-      <div class="footercompany">
-        <h3>Company</h3>
-        <p>About</p>
-        <p>Career <span class="hiring">We're hiring</span></p>
-        <p>Blog</p>
-        <p>Customers</p>
-        <p>Hire us</p>
-      </div>
-      <div class="footerfeatures">
-        <h3>Features</h3>
-        <p>Press</p>
-        <p>Release notes</p>
-        <p>Integrations</p>
-        <p>Pricing</p>
-      </div>
-      <div class="footerdocumentation">
-        <h3>Documentation</h3>
-        <p>Support</p>
-        <p>Docs</p>
-        <p>Status</p>
-        <p>API Reference</p>
-        <p>Tech Requirements</p>
-      </div>
-      <div class="footerresources">
-        <h3>Resources</h3>
-        <p>
-          <i class="fa-solid fa-circle-info"></i>
-           Help
-        </p>
-        <p>
-          <i class="fa-solid fa-circle-user"></i>
-           Your Account
-        </p>
-      </div>
+      <div class="footerrows">
+        <div class="footerrow1">
+          <div class="footercompany">
+            <h3>Company</h3>
+            <p>About</p>
+            <p>Career <span class="hiring">We're hiring</span></p>
+            <p>Blog</p>
+            <p>Customers</p>
+            <p>Hire us</p>
+          </div>
+          <div class="footerfeatures">
+            <h3>Features</h3>
+            <p>Press</p>
+            <p>Release notes</p>
+            <p>Integrations</p>
+            <p>Pricing</p>
+          </div>
+        </div>
+        <div class="footerrow2">
+          <div class="footerdocumentation">
+            <h3>Documentation</h3>
+            <p>Support</p>
+            <p>Docs</p>
+            <p>Status</p>
+            <p>API Reference</p>
+            <p>Tech Requirements</p>
+          </div>
+          <div class="footerresources">
+            <h3>Resources</h3>
+            <p>
+              <i class="fa-solid fa-circle-info"></i>
+              Help
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-user"></i>
+              Your Account
+            </p>
+          </div>
+        </div>  
+      </div>  
     </footer>
   </body>
 </html>

@@ -4,6 +4,15 @@
     padding: 0;
 }
 
+@media (hover: none) {
+    *:hover {
+        background-color: inherit;
+        color: inherit;
+        transform: inherit;
+        box-shadow: inherit;
+    }
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -168,6 +177,37 @@ button.playvideobtn:hover {
     min-height: 446px;
     width: 50vw;
     position: relative;
+}
+
+@keyframes slideup {
+    0% {
+        transform: translateY(1000px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.imgwrapperpaypal, 
+.imgwrapperatlassian, 
+.imgwrapperweave {
+    animation: slideup 2s ease-in-out 1 0s forwards;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.imgwrappergoogle, 
+.imgwrappergoogle-ads, 
+.imgwrapperasana, 
+.imgwrappercalendar {
+    animation: slide-left 2s ease-in-out 1 0s forwards;
 }
 
 .imgwrappergoogle {
@@ -359,6 +399,39 @@ button.playvideobtn:hover {
 
 /*About Section*/
 
+.bulletsectionmobile {
+    padding: 30px 30px 0px 30px;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+}
+
+.bulletsmobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.bullettextmobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .bulletsectionmobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .bulletsection {
+        display: none;
+    }
+}
+
 .aboutsection {
     display: flex;
     flex-direction: column;
@@ -444,7 +517,8 @@ button.playvideobtn:hover {
     flex-direction: row;
     flex-wrap: wrap;
     max-height: 450px;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50px;
 }
 
 .pricingcard {
@@ -456,7 +530,28 @@ button.playvideobtn:hover {
     border-style: solid;
     border-width: 1px;
     border-color: #E2E2E2;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    box-shadow: none;
+}
+
+.pricingcard:hover {
+    transform: scale(1.01);
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 1023px) {
+    .pricingcard {
+        width: 90vw;
+        max-width: 1000px;
+        align-items: center;
+    }
+    .pricingdetails {
+        max-height: fit-content;
+    }
+    .pricingfeatures {
+        margin-top: 50px;
+    }
 }
 
 .pricecardprice {
@@ -476,7 +571,7 @@ button.playvideobtn:hover {
 
 .pricingcard .playvideobtn {
     margin-top: 30px;
-    width: 55%;
+    width: 150px;
 }
 
 .pricecarddisclaimer {
@@ -510,12 +605,24 @@ button.playvideobtn:hover {
     font-weight: 700;
 }
 
+.sketch {
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: #01C9A7;
+    width: 60px;
+    height: 23px;
+    padding: 4px 10px;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
 /*Hire Us Section*/
 .hireussection {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 708px;
+    max-height: 708px;
     background-color: #20335B;
     padding: 30px;
 }
@@ -527,6 +634,11 @@ button.playvideobtn:hover {
     flex-direction: column;
     justify-content: center;
     margin-right: 60px;
+    margin-top: 60px;
+}
+
+.ctatag {
+    margin-bottom: 60px;
 }
 
 .hireuscta h2 {
@@ -550,13 +662,76 @@ button.playvideobtn:hover {
     margin-top: 32px;
 }
 
+@media screen and (max-width: 1023px) {
+    .hireussection {
+        flex-direction: column;
+        max-height: fit-content;
+        padding: 60px 30px;
+    }
+    .hireuscta {
+        flex-direction: row;
+    }
+    .ctatag {
+        margin-right: 60px;
+    }
+    .hireuscta {
+        margin-top: 0px;
+    }
+    .hireusform {
+        align-self: center;
+        max-width: 90vw;
+        width: 90vw;
+    }
+    form button {
+        align-self: center;
+        justify-self: center;
+    }
+    .footerrow1 div {
+        margin-right: 60px;
+    }
+    .footerrow2 div {
+        margin-right: 60px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .ctatag {
+        margin: 0px 0px 60px 0px;
+    }
+    .hireuscta {
+        flex-direction: column;
+        margin: 0px;
+        text-align: center;
+    }
+    .ctaattribute {
+        margin-bottom: 60px;
+    }
+    .firstnamelastname {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    input#firstname {
+        min-width: 100%;
+    }
+    input#lastname {
+        min-width: 100%;
+    }
+    .formselections {
+        flex-wrap: wrap;
+    }
+    select#budget {
+        min-width: 100%;
+    }
+    select#country {
+        min-width: 100%;
+    }
+}
+
 .hireuscta h3 {
     font-weight: 700;
     font-size: 18px;
     line-height: 100%;
-    letter-spacing: 0%;
     color: white;
-    margin-top: 60px;
     margin-bottom: 10px;
 }
 
@@ -582,7 +757,6 @@ button.playvideobtn:hover {
 }
 
 .hireusform {
-    max-width: 482px;
     background-color: white;
     padding: 30px;
     border: solid;
@@ -608,12 +782,11 @@ input {
 
 input#email {
     width: 100%;
-    margin-bottom: 20px;
 }
 
 input#firstname {
     width: 47.5%;
-    margin-right: 4%;
+    margin-right: 5%;
     margin-bottom: 20px;
 }
 
@@ -655,7 +828,7 @@ textarea {
 }
 
 select#budget {
-    margin-right: 4%;
+    margin-right: 5%;
 }
 
 input#emailoptin {
@@ -674,7 +847,6 @@ input#emailoptin {
 }
 
 .formfootertext {
-    width: 351px;
     display: flex;
     flex-direction: column;
     margin-left: 10px;
@@ -692,22 +864,55 @@ input#emailoptin {
 }
 
 form button {
-    margin-left: 33%;
+    text-align: center;
+}
+
+.firstnamelastname {
+    display: flex;
+    flex-direction: row;
+}
+
+.formselections {
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 /*Footer*/
 
+@media screen and (max-width:767px) {
+    footer {
+        flex-wrap: wrap;
+        max-height: none;
+        text-align: center;
+    }
+    .footerrow1 {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footerrow2 {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footerrow1 div {
+        margin: 0px 60px;
+    }
+    .footerrow2 div {
+        margin: 0px 60px;
+    }
+}
+
 footer {
-    height: 246px;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     padding: 40px 30px;
     gap: 40px;
     justify-content: center;
-}
-
-.footerlogo {
-    width: 251px;
 }
 
 .footerlogo img {
@@ -757,5 +962,32 @@ footer a:hover {
     padding-bottom: 2px;
     padding-left: 4px;
     border-radius: 3px;
+}
+
+.footerrows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footerrow1 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.footerrow2 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.footerrow1 div {
+    min-width: 145px;
+}
+
+.footerrow2 div {
+    min-width: 145px;
 }
 
